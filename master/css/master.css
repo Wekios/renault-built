@@ -817,7 +817,7 @@ a img {
       margin-top: 5.4rem; } }
   @media (min-width: 1024px) {
     .footer {
-      margin-top: 17.3rem; } }
+      margin-top: 7.5rem; } }
   .footer__img {
     margin: 0 auto;
     width: 31%; }
@@ -4107,7 +4107,14 @@ a img {
     .les-plus-slider .les-plus__third-teaser,
     .les-plus-slider .les-plus__fourth-teaser {
       outline: none;
-      margin: 0 0.6rem 3rem; }
+      margin: 0 0.6rem 3rem; } }
+    @media (min-width: 768px) and (min-width: 1024px) {
+      .les-plus-slider .les-plus__first-teaser, .les-plus-slider .les-plus__second-teaser,
+      .les-plus-slider .les-plus__third-teaser,
+      .les-plus-slider .les-plus__fourth-teaser {
+        margin-bottom: 11rem; } }
+
+@media (min-width: 768px) {
       .les-plus-slider .les-plus__first-teaser__figure, .les-plus-slider .les-plus__second-teaser__figure,
       .les-plus-slider .les-plus__third-teaser__figure,
       .les-plus-slider .les-plus__fourth-teaser__figure {
