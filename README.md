@@ -15,6 +15,25 @@ Default Article page: [here](https://wekios.github.io/article.html)
 
 Article FAQ page: [here](https://wekios.github.io/article-faq.html)
 
+Article Diaporama page: [here](https://wekios.github.io/article-diaporama.html)
+
+Article Portrait page: [here](https://wekios.github.io/article-portrait.html)
+
+Live News page: [here](https://wekios.github.io/live-news.html)
+
+Search Results page: [here](https://wekios.github.io/search-results.html)
+
+Results None page: [here](https://wekios.github.io/results-none.html)
+
+Psychotest page: [here](https://wekios.github.io/psychotest.html)
+
+404 Page Not Found page: [here](https://wekios.github.io/404.html)
+
+All Tags page: [here](https://wekios.github.io/404.html)
+
+T&C page: [here](https://wekios.github.io/t&c.html)
+
+CGU page: [here](https://wekios.github.io/cgu.html)
 
 ## Author
 
