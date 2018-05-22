@@ -3157,11 +3157,8 @@ $(document).ready(function () {
       mainContent.toggleClass('menuOpened');
       $('body, html').toggleClass('menuOpened');
 
-      if (menuTrigger.children().hasClass('fa-bars')) {
-        menuTrigger.children().removeClass('fa-bars').addClass('fa-times');
-      } else {
-        menuTrigger.children().removeClass('fa-times').addClass('fa-bars');
-      }
+      menuTrigger.find('.fa-bars').toggleClass('closed');
+      menuTrigger.find('.fa-times').toggleClass('closed');
 
     });
 
@@ -3180,11 +3177,7 @@ $(document).ready(function () {
         headerNavWrap.css('overflow-y', 'scroll');
         $sub.slideToggle(200);
 
-        if ($arrow.hasClass('fa-chevron-down')) {
-          $arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-        } else {
-          $arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-        }
+        $arrow.toggleClass('rotate');
 
       });
 
@@ -3921,9 +3914,11 @@ $(document).ready(function () {
     arrowPrev = navigation.find('.diaporama-trigger__prev'),
     arrowNext = navigation.find('.diaporama-trigger__next'),
     openDiaporama = diaporamaTrigger.find('.diaporama-trigger__button'),
+    openDiaporamaBtn = openDiaporama.find('.btn--diaporama'),
     diaporama = $('body').find('.diaporama'),
     diaporamaSlider = diaporama.find('.diaporama--wrap'),
     diaporamaTriggerThumbs = diaporamaTrigger.find('.diaporama-trigger__thumbs'),
+    diaporamaTriggerThumb = diaporamaTriggerThumbs.find('.diaporama-trigger__thumb'),
 
     // Diaporama 
     diaporama = $('.diaporama'),
@@ -3947,6 +3942,10 @@ $(document).ready(function () {
     diaporamaSlider.slick('setPosition');
     $('.diaporama .diaporama__thumbs').slick('setPosition');
     $('body, html').addClass('diaporamaOpened');
+  });
+
+  diaporamaTriggerThumb.on('hover', function(e){
+    openDiaporamaBtn.toggleClass('btn--yellow');
   });
 
   arrowPrev.on('click', function (e) {

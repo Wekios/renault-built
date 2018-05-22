@@ -2378,6 +2378,8 @@ a img {
     @media (min-width: 1024px) {
       .header__menu-trigger {
         font-size: 5rem; } }
+    .header__menu-trigger .closed {
+      display: none; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .header__menu-trigger {
         top: 2.5rem;
@@ -2448,7 +2450,11 @@ a img {
   @media (max-width: 1023px) {
     .main-navigation > li {
       margin-bottom: 11.3vw;
-      position: relative; } }
+      position: relative; }
+      .main-navigation > li svg {
+        -webkit-transition: all 0.3s ease;
+        /* Safari */
+        transition: all 0.3s ease; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .main-navigation > li {
       margin-bottom: 7.7vw; } }
@@ -2622,6 +2628,16 @@ a img {
       padding: 4% 10% 0 5.7%; }
       .sub-menu-articles h2 {
         font-size: 2.5rem; } }
+
+.rotate {
+  -webkit-transition: all 0.3s ease;
+  /* Safari */
+  transition: all 0.3s ease;
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Safari 3-8 */
+  transform: rotate(180deg); }
 
 .footer {
   text-align: center; }
@@ -5494,16 +5510,20 @@ a img {
 
 .faq-slider__arrows {
   display: inline-block;
+  cursor: pointer;
   padding: 0 1rem; }
-  .faq-slider__arrows:hover {
-    color: #000000;
-    cursor: pointer; }
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
+    .faq-slider__arrows {
+      padding: 0.1rem;
+      width: 1.4vw;
+      height: 1.4vw;
+      line-height: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 100%; }
       .faq-slider__arrows:hover {
-        color: #ffffff;
         background: #8b8b8b;
-        height: 1.6rem;
-        border-radius: 50%; } }
+        color: #ffffff; } }
 
 .faq-slider__arrows-left {
   bottom: -5rem;
@@ -5666,8 +5686,19 @@ a img {
   padding: 0 1rem;
   cursor: pointer;
   color: #404040; }
-  .qa-slider__arrows:hover {
-    color: #000000; }
+  @media (min-width: 1024px) {
+    .qa-slider__arrows {
+      margin-top: -0.9rem;
+      padding: 0.1rem;
+      width: 1.4vw;
+      height: 1.4vw;
+      line-height: 1.4vw;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 100%; }
+      .qa-slider__arrows:hover {
+        background: #8b8b8b;
+        color: #ffffff; } }
 
 .cote-business__portrait-slider {
   position: relative;
@@ -5813,10 +5844,11 @@ a img {
 
 .portrait-slider__arrows {
   display: inline-block !important;
-  padding: 0 2rem; }
-  .portrait-slider__arrows:hover {
-    color: #8b8b8b;
-    cursor: pointer; }
+  padding: 0 2rem;
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    .portrait-slider__arrows:hover {
+      color: #ffcc33; } }
 
 .portrait-slider__current {
   color: #ffcc33; }
@@ -6212,6 +6244,8 @@ a img {
       left: 0;
       box-shadow: inset 0 0 0 5px #ffcc33;
       transition: opacity .1s linear; }
+      .diaporama-trigger__thumb .overlay:hover {
+        opacity: 1; }
   .diaporama-trigger__footnote {
     right: 0;
     background-color: #ffffff; }
@@ -9079,20 +9113,20 @@ html.diaporamaOpened, body.diaporamaOpened {
       line-height: 3.6rem;
       letter-spacing: 0.05em; } }
 
-.les-plus__heading {
+.page-test-result .les-plus__heading {
   margin: -1rem 0 3rem 0;
   width: 5rem; }
   @media (min-width: 768px) {
-    .les-plus__heading {
+    .page-test-result .les-plus__heading {
       width: 8rem;
       margin-left: -1.2rem; } }
-  .les-plus__heading h2 {
+  .page-test-result .les-plus__heading h2 {
     line-height: 4.3rem; }
     @media (min-width: 768px) {
-      .les-plus__heading h2 {
+      .page-test-result .les-plus__heading h2 {
         line-height: 1.1; } }
 
-.les-plus .figure {
+.page-test-result .les-plus .figure {
   filter: none; }
 
 @media (min-width: 1024px) {
@@ -9112,14 +9146,14 @@ html.diaporamaOpened, body.diaporamaOpened {
       line-height: 3rem;
       color: #ffcc33;
       margin-bottom: 3rem; }
-  .les-plus {
-    width: 79.52941vw;
-    margin: 0 auto; }
-    .les-plus__heading {
-      margin-left: 4rem;
-      margin-top: 0; }
-    .les-plus__navigation {
-      display: none !important; } }
+    .page-test-result .les-plus {
+      width: 79.52941vw;
+      margin: 0 auto; }
+      .page-test-result .les-plus__heading {
+        margin-left: 4rem;
+        margin-top: 0; }
+      .page-test-result .les-plus__navigation {
+        display: none; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hidden--tab {
