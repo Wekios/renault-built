@@ -3208,7 +3208,7 @@ $(document).ready(function () {
     $('body').removeClass('overflow-none');
   });
 
-  searchInput.on('mouseenter', function () {
+  searchInput.on('mouseenter focus', function () {
 
     $('.search-popup .search__field svg').css('color', 'white');
 
