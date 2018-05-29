@@ -29,6 +29,8 @@ Psychotest page: [here](https://wekios.github.io/psychotest.html)
 
 404 Page Not Found page: [here](https://wekios.github.io/404.html)
 
+404 Amp Page Not Found page: [here](https://wekios.github.io/404amp.html)
+
 All Tags page: [here](https://wekios.github.io/all-tags.html)
 
 T&C page: [here](https://wekios.github.io/t&c.html)
